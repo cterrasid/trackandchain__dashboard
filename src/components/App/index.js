@@ -11,7 +11,17 @@ class App extends PureComponent {
   }
 
   render() {
-    return <div className="app__container">App</div>;
+    return (
+      <div className="app__container">
+        <header className="header__container">Header</header>
+        <main className="main__container">
+          <section className="quick-stats__container">Stats</section>
+          <section className="location__container">Location</section>
+          <section className="tweets__container">Tweets</section>
+        </main>
+        <footer className="footer__container">Footer</footer>
+      </div>
+    );
   }
 }
 
