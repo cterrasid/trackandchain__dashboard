@@ -1,4 +1,13 @@
 {
+  "titles": {
+    "header": "Dashboard"
+  },
+  "images": {
+    "logo": {
+      "url": "",
+      "alt": "Track and Chain"
+    }
+  },
   "places": [
     "Barajas",
     "Chamartín",

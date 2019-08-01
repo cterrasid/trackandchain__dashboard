@@ -1,0 +1,20 @@
+@import '../../stylesheets/mixins.scss';
+@import '../../stylesheets/variables.scss';
+
+.header__ {
+  &container {
+    @include boxSize(unset, 100%);
+    @include flexContainer(flex, flex-start, center, row nowrap);
+    background-color: #2a4941;
+    color: $whitePure;
+    padding: 10px;
+  }
+
+  &logo {
+    @include boxSize(50px, 50px);
+  }
+
+  &title{
+    margin-left: 10px;
+  }
+}

@@ -1,6 +1,7 @@
 import React, { PureComponent } from 'react';
 import { Line, Doughnut, Bar } from 'react-chartjs-2';
-import graphData from '../../data/data.json';
+import Header from '../Header';
+import dashboardData from '../../data/data.json';
 import './styles.scss';
 
 class App extends PureComponent {
@@ -15,7 +16,10 @@ class App extends PureComponent {
   render() {
     return (
       <div className="app__container">
-        <header className="header__container">Dashboard</header>
+        <Header
+          title={dashboardData.titles.header}
+          logo={dashboardData.images.logo}
+        />
         <main className="main__container">
           <section className="description__container">
             <h2 className="description__title">Descripción</h2>
@@ -33,7 +37,7 @@ class App extends PureComponent {
               </h2>
               <Line
                 data={{
-                  labels: graphData.places,
+                  labels: dashboardData.places,
                   datasets: [
                     {
                       label: 'Afluencia',
@@ -50,7 +54,7 @@ class App extends PureComponent {
               </h2>
               <Doughnut
                 data={{
-                  labels: graphData.transport,
+                  labels: dashboardData.transport,
                   datasets: [
                     {
                       data: this.getRandomArray(5),
@@ -67,7 +71,7 @@ class App extends PureComponent {
               </h2>
               <Bar
                 data={{
-                  labels: graphData.days,
+                  labels: dashboardData.days,
                   datasets: [
                     {
                       label: 'Visitas',
