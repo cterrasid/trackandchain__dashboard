@@ -18,13 +18,11 @@ body {
 
 .main__ {
   &container {
-    @include boxSize(100%, 100%);
-    @include flexContainer(flex, center, center, column);
-    padding: 30px;
-    background-color: $whitePure;
+    width: 100%;
+    height: 100%;
+    background-color: aqua;
   }
 }
-
 
 .quick-stats__,
 .location__,

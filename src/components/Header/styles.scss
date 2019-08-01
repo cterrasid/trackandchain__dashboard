@@ -18,3 +18,15 @@
     margin-left: 10px;
   }
 }
+
+svg#bigTriangleColor {
+  pointer-events: none;
+  @include boxSize(20px, 100%);
+  z-index: 1;
+}
+
+#bigTriangleColor path {
+  fill: #2a4941;
+  stroke: #2a4941;
+  stroke-width: 2;
+}
