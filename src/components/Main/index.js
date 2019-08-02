@@ -1,8 +1,8 @@
 import React from 'react';
 import LineGraph from '../LineGraph';
-import BarGraph from '../BarGraph';
+// import BarGraph from '../BarGraph';
 import DoughnutGraph from '../DoughnutGraph';
-import Location from '../Location';
+// import Location from '../Location';
 import './styles.scss';
 
 const Main = props => {
@@ -25,12 +25,12 @@ const Main = props => {
           transport={graph.transport}
           getRandomArray={getRandomArray}
         />
-        <BarGraph
+        {/* <BarGraph
           title={title.visitors}
           days={graph.days}
           getRandomArray={getRandomArray}
-        />
-        <Location title={title.location} />
+        /> */}
+        {/* <Location title={title.location} /> */}
       </section>
     </main>
   );

@@ -1,24 +1,14 @@
 @import '../../stylesheets/mixins.scss';
 @import '../../stylesheets/variables.scss';
 
-.main__ {
+.places__ {
   &container {
-    @include boxSize(100%, 100%);
-    @include flexContainer(flex, center, center, column);
-    padding: 30px;
+    @include boxSize(unset, 90%);
+    text-align: start;
     background-color: $whitePure;
-  }
-}
-
-.description__ {
-  &container {
-    @include flexContainer(flex, center, flex-start, column);
-    line-height: 2;
-    padding-bottom: 30px;
   }
 
   &title {
-    margin-bottom: 10px;
+    padding-bottom: 20px;
   }
 }
-

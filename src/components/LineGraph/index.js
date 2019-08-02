@@ -6,7 +6,7 @@ const LineGraph = props => {
   const { title, places, getRandomArray } = props;
 
   return (
-    <article className="quick-stats__places">
+    <article className="places__container">
       <h3 className="places__title">{title}</h3>
       <Line
         data={{
@@ -14,7 +14,8 @@ const LineGraph = props => {
           datasets: [
             {
               label: 'Afluencia',
-              borderColor: 'rgb(255, 99, 132)',
+              borderColor: '#059e88',
+              hoverBorderColor: '#02938c',
               data: getRandomArray(100),
             },
           ],

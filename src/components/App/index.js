@@ -24,7 +24,6 @@ class App extends Component {
       <div className="app__container">
         <Header
           title={dashboardData.titles.header}
-          logo={dashboardData.images.logo}
         />
         <Main
           title={dashboardData.titles.main}

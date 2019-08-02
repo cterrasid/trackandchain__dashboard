@@ -12,7 +12,8 @@
 
 .description__ {
   &container {
-    @include flexContainer(flex, center, flex-start, column);
+    @include boxSize(unset, 100%);
+    @include flexContainer(flex, flex-start, flex-start, column);
     line-height: 2;
     padding-bottom: 30px;
   }
@@ -24,7 +25,7 @@
 
 .quick-stats__ {
   &container {
-    @media all and (min-width: $laptop) {
+    @media all and (min-width: $tablet) {
       @include flexContainer(flex, center, center, row wrap);
     }
   }
