@@ -1,24 +1,35 @@
 @import '../../stylesheets/mixins.scss';
 @import '../../stylesheets/variables.scss';
 
-.main__ {
+.transport__ {
   &container {
-    @include boxSize(100%, 100%);
-    @include flexContainer(flex, center, center, column);
+    @include boxSize(unset, 100%);
+    text-align: start;
+    background-color: $whiteMedium;
     padding: 30px;
-    background-color: $whitePure;
-  }
-}
-
-.description__ {
-  &container {
-    @include flexContainer(flex, center, flex-start, column);
-    line-height: 2;
-    padding-bottom: 30px;
+    margin-top: -3px;
   }
 
   &title {
-    margin-bottom: 10px;
+    padding-bottom: 30px;
   }
 }
 
+svg#curveUpColor {
+  @include boxSize(90px, 100%);
+  z-index: 1;
+}
+
+#curveUpColor path {
+  fill: $whiteMedium;
+  stroke: $whiteMedium;
+}
+
+svg#curveDownColor {
+  @include boxSize(80px, 100%);
+}
+
+#curveDownColor path {
+  fill: $whiteMedium;
+  stroke: $whiteMedium;
+}
