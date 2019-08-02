@@ -1,0 +1,13 @@
+@import '../../stylesheets/mixins.scss';
+@import '../../stylesheets/variables.scss';
+
+.visitors__ {
+  &container {
+    @include boxSize(unset, 80%);
+    @include flexContainer(flex, center, center, column);
+    margin: 30px;
+    background-color: $whitePure;
+  }
+}
+
+

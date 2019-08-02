@@ -22,10 +22,3 @@
   }
 }
 
-.quick-stats__ {
-  &container {
-    @media all and (min-width: $laptop) {
-      @include flexContainer(flex, center, center, row wrap);
-    }
-  }
-}

@@ -16,24 +16,6 @@ body {
   height: 100%;
 }
 
-.main__ {
-  &container {
-    @include boxSize(100%, 100%);
-    @include flexContainer(flex, center, center, column);
-    padding: 30px;
-    background-color: $whitePure;
-  }
-}
-
-
-.quick-stats__,
-.location__,
-.tweets__ {
-  &container {
-    @include cardContainer;
-  }
-}
-
 .footer__ {
   &container {
     width: 100%;
