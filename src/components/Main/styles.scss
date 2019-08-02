@@ -1,0 +1,32 @@
+@import '../../stylesheets/mixins.scss';
+@import '../../stylesheets/variables.scss';
+
+.main__ {
+  &container {
+    @include boxSize(100%, 100%);
+    @include flexContainer(flex, center, center, column);
+    padding: 30px;
+    background-color: $whitePure;
+  }
+}
+
+.description__ {
+  &container {
+    @include boxSize(unset, 100%);
+    @include flexContainer(flex, flex-start, flex-start, column);
+    line-height: 2;
+    padding-bottom: 30px;
+  }
+
+  &title {
+    margin-bottom: 10px;
+  }
+}
+
+.quick-stats__ {
+  &container {
+    @media all and (min-width: $tablet) {
+      @include flexContainer(flex, center, center, row wrap);
+    }
+  }
+}

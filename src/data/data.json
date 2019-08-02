@@ -1,31 +1,26 @@
 {
-  "places": [
-    "Barajas",
-    "Chamartín",
-    "Carabanchel",
-    "Vallecas",
-    "Fuenlabrada",
-    "Tetuán",
-    "Parla",
-    "Las Rozas",
-    "Getafe",
-    "Alcobendas",
-    "Móstoles",
-    "Lago",
-    "Las Tablas",
-    "Fuencarral",
-    "Ciudad Lineal",
-    "Tres Olivos",
-    "Embajadores"
-  ],
-  "days": [
-    "Lunes",
-    "Martes",
-    "Miércoles",
-    "Jueves",
-    "Viernes",
-    "Sábado",
-    "Domingo"
-  ],
-  "transport": ["Patinete", "Bicicleta", "Autobús", "Coche", "Metro/Tren"]
+  "titles": {
+    "header": "Dashboard",
+    "main": {
+      "description": "Descripción",
+      "places": "Afluencia de personas según zona en Madrid",
+      "transport": "Medios de transporte más populares en Madrid",
+      "visitors": "Cantidad de visitantes según el día de la semana",
+      "location": "Localización geográfica"
+    }
+  },
+  "text": {
+    "description": "Lorem ipsum dolor sit amet consectetur adipisicing elit. Dicta maiores sed consequatur quidem ipsam autem commodi iusto, temporibus iste eos! Accusantium commodi sequi dolore voluptas debitis qui ab rerum quis."
+  },
+  "images": {
+    "logo": {
+      "url": "",
+      "alt": "Track and Chain"
+    }
+  },
+  "graph": {
+    "places": ["A", "B", "C", "D", "E", "F", "G", "H", "I", "J", "K", "L"],
+    "days": ["L", "M", "M", "J", "V", "S", "D"],
+    "transport": ["Pat", "Bic", "Bus", "Car", "Met"]
+  }
 }

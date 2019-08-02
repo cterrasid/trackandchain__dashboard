@@ -1,0 +1,14 @@
+@import '../../stylesheets/mixins.scss';
+@import '../../stylesheets/variables.scss';
+
+.places__ {
+  &container {
+    @include boxSize(unset, 90%);
+    text-align: start;
+    background-color: $whitePure;
+  }
+
+  &title {
+    padding-bottom: 20px;
+  }
+}

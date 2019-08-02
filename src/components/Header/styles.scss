@@ -1,0 +1,32 @@
+@import '../../stylesheets/mixins.scss';
+@import '../../stylesheets/variables.scss';
+
+.header__ {
+  &container {
+    @include boxSize(unset, 100%);
+    @include flexContainer(flex, flex-start, center, row nowrap);
+    background-color: $whiteMedium;
+    padding: 10px;
+  }
+
+  &logo {
+    @include boxSize(50px, 50px);
+  }
+
+  &title{
+    text-transform: uppercase;
+    margin-left: 10px;
+  }
+}
+
+svg#bigTriangleColor {
+  pointer-events: none;
+  @include boxSize(20px, 100%);
+  z-index: 1;
+}
+
+#bigTriangleColor path {
+  fill: $whiteMedium;
+  stroke: $whiteMedium;
+  stroke-width: 2;
+}
