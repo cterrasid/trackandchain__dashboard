@@ -1,0 +1,35 @@
+@import '../../stylesheets/mixins.scss';
+@import '../../stylesheets/variables.scss';
+
+.transport__ {
+  &container {
+    @include boxSize(unset, 100%);
+    text-align: start;
+    background-color: $whiteMedium;
+    padding: 30px;
+    margin-top: -3px;
+  }
+
+  &title {
+    padding-bottom: 30px;
+  }
+}
+
+svg#curveUpColor {
+  @include boxSize(90px, 100%);
+  z-index: 1;
+}
+
+#curveUpColor path {
+  fill: $whiteMedium;
+  stroke: $whiteMedium;
+}
+
+svg#curveDownColor {
+  @include boxSize(80px, 100%);
+}
+
+#curveDownColor path {
+  fill: $whiteMedium;
+  stroke: $whiteMedium;
+}
