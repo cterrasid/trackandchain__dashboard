@@ -14,10 +14,10 @@ const BarGraph = props => {
           datasets: [
             {
               label: 'Visitas',
-              backgroundColor: 'rgba(255,99,132,0.2)',
-              borderColor: 'rgba(209, 12, 94,0.2)',
-              hoverBackgroundColor: 'rgba(255,99,132,0.4)',
-              hoverBorderColor: 'rgba(255,99,132,1)',
+              backgroundColor: '#059e87df',
+              borderColor: '#147f74',
+              hoverBackgroundColor: '#02938cc4',
+              hoverBorderColor: '#215e54',
               data: getRandomArray(10),
             },
           ],

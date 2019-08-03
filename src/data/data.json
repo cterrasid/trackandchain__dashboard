@@ -6,11 +6,12 @@
       "places": "Afluencia de personas según zona en Madrid",
       "transport": "Medios de transporte más populares en Madrid",
       "visitors": "Cantidad de visitantes según el día de la semana",
+      "satisfaction": "Indice de satisfacción del servicio",
       "location": "Localización geográfica"
     }
   },
   "text": {
-    "description": "Lorem ipsum dolor sit amet consectetur adipisicing elit. Dicta maiores sed consequatur quidem ipsam autem commodi iusto, temporibus iste eos! Accusantium commodi sequi dolore voluptas debitis qui ab rerum quis."
+    "description": "Lorem ipsum dolor sit amet consectetur adipisicing elit. Dicta maiores sed consequatur quidem ipsam autem commodi iusto, temporibus iste eos! Accusantium commodi sequi dolore voluptas debitis qui ab rerum quis. Lorem ipsum dolor sit amet consectetur adipisicing elit. Dicta maiores sed consequatur quidem ipsam autem commodi iusto, temporibus iste eos! Accusantium commodi sequi dolore voluptas debitis qui ab rerum quis. "
   },
   "images": {
     "logo": {
@@ -21,6 +22,7 @@
   "graph": {
     "places": ["A", "B", "C", "D", "E", "F", "G", "H", "I", "J", "K", "L"],
     "days": ["L", "M", "M", "J", "V", "S", "D"],
-    "transport": ["Pat", "Bic", "Bus", "Car", "Met"]
+    "transport": ["Pat", "Bic", "Bus", "Car", "Met"],
+    "satisfaction": ["Muy malo", "Malo", "Regular", "Bueno", "Excelente"]
   }
 }

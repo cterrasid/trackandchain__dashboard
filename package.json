@@ -2,6 +2,7 @@
   "name": "trackandchain__dashboard",
   "version": "0.1.0",
   "private": true,
+  "homepage": "./",
   "dependencies": {
     "chart.js": "^2.8.0",
     "leaflet": "^1.5.1",
