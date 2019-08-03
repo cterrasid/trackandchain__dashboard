@@ -9,6 +9,7 @@ const LineGraph = props => {
     <article className="places__container">
       <h3 className="places__title">{title}</h3>
       <Line
+        id="line"
         data={{
           labels: places,
           datasets: [
@@ -17,6 +18,8 @@ const LineGraph = props => {
               borderColor: '#059e88',
               hoverBorderColor: '#02938c',
               data: getRandomArray(100),
+              responsive: true,
+              maintainAspectRatio: false,
             },
           ],
         }}

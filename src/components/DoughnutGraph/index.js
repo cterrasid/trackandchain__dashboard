@@ -19,6 +19,7 @@ const DoughnutGraph = props => {
       <article className="transport__container">
         <h3 className="transport__title">{title}</h3>
         <Doughnut
+          id="doughnut"
           data={{
             labels: transport,
             datasets: [
@@ -38,6 +39,8 @@ const DoughnutGraph = props => {
                   '#af74a1',
                   '#1e90b9',
                 ],
+                responsive: true,
+                maintainAspectRatio: false,
               },
             ],
           }}

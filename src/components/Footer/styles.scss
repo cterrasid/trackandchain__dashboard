@@ -1,35 +1,25 @@
 @import '../../stylesheets/mixins.scss';
 @import '../../stylesheets/variables.scss';
 
-.header__ {
+.footer__ {
   &container {
     @include boxSize(unset, 100%);
-    @include flexContainer(flex, flex-start, center, row nowrap);
+    @include flexContainer(flex, center, center, row nowrap);
     background-color: $whiteMediumTransparency;
     padding: 10px;
-    position: fixed;
     z-index: 3;
   }
-
-  &logo {
-    @include boxSize(50px, 50px);
-  }
-
-  &title{
-    text-transform: uppercase;
-    margin-left: 10px;
-  }
 }
 
-svg#bigTriangleColor {
-  pointer-events: none;
+svg#bigTriangleUp {
   @include boxSize(20px, 100%);
-  position: fixed;
-  top: 70px;
+  pointer-events: none;
   z-index: 3;
+  transform: rotate(180deg);
+  margin-bottom: -3px;
 }
 
-#bigTriangleColor path {
+#bigTriangleUp path {
   fill: $whiteMediumTransparency;
   stroke: $whiteMediumTransparency;
   stroke-width: 2;

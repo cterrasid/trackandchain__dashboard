@@ -6,7 +6,7 @@
       "places": "Afluencia de personas según zona en Madrid",
       "transport": "Medios de transporte más populares en Madrid",
       "visitors": "Cantidad de visitantes según el día de la semana",
-      "satisfaction": "Indice de satisfacción del servicio",
+      "satisfaction": "Indice de satisfacción del servicio de transporte",
       "location": "Localización geográfica"
     }
   },
@@ -22,7 +22,7 @@
   "graph": {
     "places": ["A", "B", "C", "D", "E", "F", "G", "H", "I", "J", "K", "L"],
     "days": ["L", "M", "M", "J", "V", "S", "D"],
-    "transport": ["Pat", "Bic", "Bus", "Car", "Met"],
-    "satisfaction": ["Muy malo", "Malo", "Regular", "Bueno", "Excelente"]
+    "transport": ["P", "Bc", "Bs", "C", "M"],
+    "satisfaction": ["Mm", "M", "R", "B", "E"]
   }
 }

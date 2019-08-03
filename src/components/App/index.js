@@ -1,6 +1,7 @@
 import React, { Component } from 'react';
 import Header from '../Header';
 import Main from '../Main';
+import Footer from '../Footer';
 import dashboardData from '../../data/data.json';
 import './styles.scss';
 
@@ -31,6 +32,7 @@ class App extends Component {
           graph={dashboardData.graph}
           getRandomArray={this.getRandomArray}
         />
+        <Footer />
       </div>
     );
   }

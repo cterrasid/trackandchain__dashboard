@@ -3,9 +3,23 @@
 
 .visitors__ {
   &container {
-    @include boxSize(unset, 80%);
+    @include boxSize(unset, 100%);
     @include flexContainer(flex, center, center, column);
-    margin: 30px;
     background-color: $whitePure;
+    text-align: center;
+    margin-top: -83px;
+    padding-top: 80px;
+    padding-bottom: 80px;
+    margin-bottom: -20px;
   }
+
+  &title {
+    padding-bottom: 30px;
+  }
+}
+
+#bar {
+  margin: 0 auto;
+  width: 90% !important;
+  height: 160px !important;
 }

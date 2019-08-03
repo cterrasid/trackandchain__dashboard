@@ -3,7 +3,7 @@ import LineGraph from '../LineGraph';
 import BarGraph from '../BarGraph';
 import PieGraph from '../PieGraph';
 import DoughnutGraph from '../DoughnutGraph';
-// import Location from '../Location';
+import Location from '../Location';
 import './styles.scss';
 
 const Main = props => {
@@ -15,6 +15,15 @@ const Main = props => {
         <h2 className="description__title">{title.description}</h2>
         <p className="description__text">{text}</p>
       </section>
+      <svg
+        id="curveDownWhite"
+        xmlns="http://www.w3.org/2000/svg"
+        version="1.1"
+        viewBox="0 0 100 100"
+        preserveAspectRatio="none"
+      >
+        <path d="M0 0 C 50 100 80 100 100 0 Z" />
+      </svg>
       <section className="quick-stats__container">
         <LineGraph
           title={title.places}
@@ -33,10 +42,10 @@ const Main = props => {
         />
         <PieGraph
           title={title.satisfaction}
-          transport={graph.satisfaction}
+          satisfaction={graph.satisfaction}
           getRandomArray={getRandomArray}
         />
-        {/* <Location title={title.location} /> */}
+        <Location title={title.location} />
       </section>
     </main>
   );

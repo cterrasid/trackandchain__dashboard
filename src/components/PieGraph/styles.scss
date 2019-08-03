@@ -1,11 +1,43 @@
 @import '../../stylesheets/mixins.scss';
 @import '../../stylesheets/variables.scss';
 
-.visitors__ {
+.satisfaction__ {
   &container {
-    @include boxSize(unset, 80%);
-    @include flexContainer(flex, center, center, column);
-    margin: 30px;
-    background-color: $whitePure;
+    @include boxSize(unset, 100%);
+    text-align: start;
+    background-color: $aquaPrimaryLight;
+    padding: 30px;
+    margin-top: -3px;
+    text-align: center;
   }
+
+  &title {
+    padding-bottom: 30px;
+  }
+}
+
+svg#curveUpPie {
+  @include boxSize(90px, 100%);
+  margin-top: -80px;
+  z-index: 1;
+}
+
+#curveUpPie path {
+  fill: $aquaPrimaryLight;
+  stroke: $aquaPrimaryLight;
+}
+
+svg#curveDownPie {
+  @include boxSize(80px, 100%);
+}
+
+#curveDownPie path {
+  fill: $aquaPrimaryLight;
+  stroke: $aquaPrimaryLight;
+}
+
+#pie {
+  margin: 0 auto;
+  width: 100% !important;
+  height: 130px !important;
 }

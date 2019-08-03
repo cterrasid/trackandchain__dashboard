@@ -9,6 +9,7 @@ const BarGraph = props => {
     <article className="visitors__container">
       <h3 className="visitors__title">{title}</h3>
       <Bar
+        id="bar"
         data={{
           labels: days,
           datasets: [
@@ -18,6 +19,8 @@ const BarGraph = props => {
               borderColor: '#147f74',
               hoverBackgroundColor: '#02938cc4',
               hoverBorderColor: '#215e54',
+              responsive: true,
+              maintainAspectRatio: false,
               data: getRandomArray(10),
             },
           ],
