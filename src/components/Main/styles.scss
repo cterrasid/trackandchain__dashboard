@@ -17,6 +17,7 @@
     line-height: 2;
     padding: 30px;
     margin-bottom: -100px;
+    grid-area: 'desc';
   }
 
   &title {
@@ -26,9 +27,20 @@
 
 .quick-stats__ {
   &container {
+    width: 100%;
     background-color: $whitePure;
-    @media all and (min-width: $tablet) {
-      @include flexContainer(flex, center, center, row wrap);
+
+    @include mediaquerie(tablet) {
+      @include gridContainer(
+        grid,
+        1fr 1fr,
+        1fr 1fr 1fr 1fr 1fr,
+        'desc desc'
+        'line doughnut'
+        'bar pie'
+        'map map'
+        'footer footer'
+      );
     }
   }
 }

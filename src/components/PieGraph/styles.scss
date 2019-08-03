@@ -9,6 +9,7 @@
     padding: 30px;
     margin-top: -3px;
     text-align: center;
+    grid-area: 'pie';
   }
 
   &title {
@@ -38,6 +39,6 @@ svg#curveDownPie {
 
 #pie {
   margin: 0 auto;
-  width: 100% !important;
+  width: 260px !important;
   height: 130px !important;
 }

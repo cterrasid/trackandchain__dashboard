@@ -9,6 +9,7 @@
     padding: 30px;
     margin-top: -3px;
     text-align: center;
+    grid-area: 'doughnut';
   }
 
   &title {
@@ -38,6 +39,6 @@ svg#curveDownColor {
 
 #doughnut {
   margin: 0 auto;
-  width: 110% !important;
+  width: 290px !important;
   height: 145px !important;
 }
