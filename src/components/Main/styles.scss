@@ -5,7 +5,7 @@
   &container {
     @include boxSize(100%, 100%);
     @include flexContainer(flex, center, center, column);
-    padding: 30px;
+    padding: 90px 30px 30px 30px;
     background-color: $whitePure;
   }
 }
