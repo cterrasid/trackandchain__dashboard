@@ -14,12 +14,7 @@
       grid-area: pie;
       padding: 0px;
       margin: 0px;
-      background: linear-gradient(
-        to bottom,
-        $aquaPrimaryLight 0%,
-        $aquaPrimaryLight 5%,
-        $whitePure 100%
-      );
+      background-color: transparent;
     }
   }
 
@@ -32,7 +27,6 @@
 
     @include mediaquerie(laptop) {
       padding-top: 30px;
-      margin-left: 125px;
     }
   }
 }
@@ -78,6 +72,5 @@ svg#curveDownPie {
   @include mediaquerie(laptop) {
     width: 400px !important;
     height: 190px !important;
-    margin-left: 125px;
   }
 }

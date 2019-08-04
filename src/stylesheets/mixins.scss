@@ -24,4 +24,7 @@
   @else if $point == laptop {
     @media (min-width: 1024px) { @content; }
   }
+  @else if $point == desktop {
+    @media (min-width: 1200px) { @content; }
+  }
 }

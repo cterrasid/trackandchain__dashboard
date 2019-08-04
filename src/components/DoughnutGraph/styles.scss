@@ -14,12 +14,7 @@
       grid-area: doughnut;
       padding: 0;
       margin: 0;
-      background: linear-gradient(
-        to bottom,
-        $whitePure 0%,
-        $whitePure 5%,
-        $aquaPrimaryLight 100%
-      );
+      background-color: transparent;
     }
   }
 
@@ -28,10 +23,6 @@
 
     @include mediaquerie(tablet) {
       padding: 15px 20px 30px 20px;
-    }
-
-    @include mediaquerie(laptop) {
-      margin-right: 125px;
     }
   }
 }

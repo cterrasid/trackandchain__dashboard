@@ -13,12 +13,7 @@
       grid-area: line;
       padding: 0;
       margin: 0;
-      background: linear-gradient(
-        to bottom,
-        $whitePure 0%,
-        $whitePure 5%,
-        $aquaPrimaryLight 100%
-      );
+      background-color: transparent;
     }
   }
 
@@ -29,12 +24,8 @@
     @include mediaquerie(tablet) {
       margin-top: 0;
       padding: 15px 20px 30px 20px;
-      margin-left: 125px;
     }
 
-    @include mediaquerie(laptop) {
-      margin-left: 125px;
-    }
   }
 }
 
@@ -67,6 +58,5 @@ svg#curveDownWhite {
   @include mediaquerie(laptop) {
     width: 390px !important;
     height: 230px !important;
-    margin-left: 125px;
   }
 }

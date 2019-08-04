@@ -7,6 +7,10 @@
     @include flexContainer(flex, center, center, column);
     background-color: $whitePure;
     grid-area: map;
+
+    @include mediaquerie(tablet) {
+      background-color: transparent;
+    }
   }
 
   &title {

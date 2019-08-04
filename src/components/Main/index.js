@@ -15,29 +15,31 @@ const Main = props => {
         <h2 className="description__title">{title.description}</h2>
         <p className="description__text">{text}</p>
       </section>
-      <section className="quick-stats__container">
-        <LineGraph
-          title={title.places}
-          places={graph.places}
-          getRandomArray={getRandomArray}
-        />
-        <DoughnutGraph
-          title={title.transport}
-          transport={graph.transport}
-          getRandomArray={getRandomArray}
-        />
-        <BarGraph
-          title={title.visitors}
-          days={graph.days}
-          getRandomArray={getRandomArray}
-        />
-        <PieGraph
-          title={title.satisfaction}
-          satisfaction={graph.satisfaction}
-          getRandomArray={getRandomArray}
-        />
-        <Location title={title.location} />
-      </section>
+      <div className="quick-stats__wrapper">
+        <section className="quick-stats__container">
+          <LineGraph
+            title={title.places}
+            places={graph.places}
+            getRandomArray={getRandomArray}
+          />
+          <DoughnutGraph
+            title={title.transport}
+            transport={graph.transport}
+            getRandomArray={getRandomArray}
+          />
+          <BarGraph
+            title={title.visitors}
+            days={graph.days}
+            getRandomArray={getRandomArray}
+          />
+          <PieGraph
+            title={title.satisfaction}
+            satisfaction={graph.satisfaction}
+            getRandomArray={getRandomArray}
+          />
+          <Location title={title.location} />
+        </section>
+      </div>
     </main>
   );
 };

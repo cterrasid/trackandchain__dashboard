@@ -15,25 +15,21 @@
       justify-content: flex-start;
       padding: 0px;
       margin: 0px;
-      background: linear-gradient(
-        to bottom,
-        $aquaPrimaryLight 0%,
-        $aquaPrimaryLight 5%,
-        $whitePure 100%
-      );
+      background-color: transparent;
     }
   }
 
   &title {
     padding-bottom: 30px;
+    margin: 0 30px;
 
     @include mediaquerie(tablet) {
       padding: 15px 20px 30px 20px;
+      margin: 0;
     }
 
     @include mediaquerie(laptop) {
       padding-top: 30px;
-      margin-right: 125px;
     }
   }
 }
@@ -50,6 +46,5 @@
   @include mediaquerie(laptop) {
     width: 390px !important;
     height: 230px !important;
-    margin-right: 125px;
   }
 }
