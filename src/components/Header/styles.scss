@@ -10,16 +10,21 @@
     position: fixed;
     z-index: 3;
 
-    @include mediaquerie(tablet){
+    @include mediaquerie(tablet) {
       position: static;
     }
   }
 
   &logo {
     @include boxSize(50px, 50px);
+
+    @include mediaquerie(tablet) {
+      @include boxSize(70px, 70px);
+      margin-right: 20px;
+    }
   }
 
-  &title{
+  &title {
     text-transform: uppercase;
     margin-left: 10px;
   }
@@ -32,7 +37,7 @@ svg#bigTriangleColor {
   top: 70px;
   z-index: 3;
 
-  @include mediaquerie(tablet){
+  @include mediaquerie(tablet) {
     position: static;
   }
 }

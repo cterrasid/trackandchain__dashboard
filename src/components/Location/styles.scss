@@ -11,6 +11,10 @@
 
   &title {
     margin-bottom: 30px;
+
+    @include mediaquerie(laptop) {
+      padding-top: 30px;
+    }
   }
 
   &map {

@@ -26,6 +26,10 @@
       height: 300px;
       margin-bottom: 0px;
     }
+
+    @include mediaquerie(laptop) {
+      width: 800px;
+    }
   }
 
   &title {
@@ -45,6 +49,10 @@
         300px 300px 300px,
         'line doughnut' 'pie bar' 'map map'
       );
+    }
+
+    @include mediaquerie(laptop) {
+      grid-template-rows: 1fr 1fr 1fr;
     }
   }
 }

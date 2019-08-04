@@ -14,7 +14,6 @@
       grid-area: doughnut;
       padding: 0;
       margin: 0;
-      height: 300px;
       background: linear-gradient(
         to bottom,
         $whitePure 0%,
@@ -29,6 +28,10 @@
 
     @include mediaquerie(tablet) {
       padding: 15px 20px 30px 20px;
+    }
+
+    @include mediaquerie(laptop) {
+      margin-right: 125px;
     }
   }
 }
@@ -69,5 +72,11 @@ svg#curveDownColor {
   @include mediaquerie(tablet) {
     width: 340px !important;
     height: 170px !important;
+  }
+
+  @include mediaquerie(laptop) {
+    width: 390px !important;
+    height: 195px !important;
+    margin-right: 125px;
   }
 }

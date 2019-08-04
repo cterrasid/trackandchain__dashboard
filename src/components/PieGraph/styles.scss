@@ -29,6 +29,11 @@
     @include mediaquerie(tablet) {
       padding: 15px 20px 30px 20px;
     }
+
+    @include mediaquerie(laptop) {
+      padding-top: 30px;
+      margin-left: 125px;
+    }
   }
 }
 
@@ -68,5 +73,11 @@ svg#curveDownPie {
   @include mediaquerie(tablet) {
     width: 320px !important;
     height: 160px !important;
+  }
+
+  @include mediaquerie(laptop) {
+    width: 400px !important;
+    height: 190px !important;
+    margin-left: 125px;
   }
 }

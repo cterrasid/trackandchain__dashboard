@@ -30,6 +30,11 @@
     @include mediaquerie(tablet) {
       padding: 15px 20px 30px 20px;
     }
+
+    @include mediaquerie(laptop) {
+      padding-top: 30px;
+      margin-right: 125px;
+    }
   }
 }
 
@@ -40,5 +45,11 @@
   @include mediaquerie(tablet) {
     width: 330px !important;
     height: 190px !important;
+  }
+
+  @include mediaquerie(laptop) {
+    width: 390px !important;
+    height: 230px !important;
+    margin-right: 125px;
   }
 }
