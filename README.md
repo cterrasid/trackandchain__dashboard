@@ -60,4 +60,4 @@ _These instructions will allow you to obtain a copy of the project on your local
 
 ## Author ✒️
 
-- Clarette Terrasi Díaz - [cterrasid](https://www.linkedin.com/in/cterrasid/)
+- Clarette Terrasi Díaz - [Go to my portfolio](https://cterrasid.github.io/my-portfolio/)
