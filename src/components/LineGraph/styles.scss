@@ -8,11 +8,30 @@
     text-align: center;
     padding: 70px 0 80px 0;
     margin-bottom: -15px;
-    grid-area: 'line';
+
+    @include mediaquerie(tablet) {
+      grid-area: line;
+      padding: 0;
+      margin: 0;
+      height: 300px;
+      background: linear-gradient(
+        to bottom,
+        $whitePure 0%,
+        $whitePure 5%,
+        $aquaPrimaryLight 100%
+      );
+    }
   }
 
   &title {
     padding-bottom: 30px;
+    margin-top: -70px;
+
+    @include mediaquerie(tablet) {
+      margin-top: 0;
+      padding: 15px 20px 30px 20px;
+
+    }
   }
 }
 
@@ -20,7 +39,11 @@ svg#curveDownWhite {
   @include boxSize(80px, 100%);
   z-index: 1;
   position: relative;
-  top: 80px;
+  bottom: 70px;
+
+  @include mediaquerie(tablet) {
+    display: none;
+  }
 }
 
 #curveDownWhite path {
@@ -32,4 +55,9 @@ svg#curveDownWhite {
   margin: 0 auto;
   width: 280px !important;
   height: 150px !important;
+
+  @include mediaquerie(tablet) {
+    width: 340px !important;
+    height: 190px !important;
+  }
 }

@@ -6,7 +6,7 @@
     @include boxSize(100%, 100%);
     @include flexContainer(flex, center, center, column);
     background-color: $whitePure;
-    grid-area: 'map';
+    grid-area: map;
   }
 
   &title {
@@ -16,6 +16,8 @@
   &map {
     @include boxSize(unset, 80%);
 
+    @include mediaquerie(tablet) {
+      width: 430px;
+    }
   }
 }
-

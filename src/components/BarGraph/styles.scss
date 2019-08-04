@@ -9,15 +9,36 @@
     text-align: center;
     margin: -83px 0 -20px 0;
     padding: 80px 0 80px 0;
-    grid-area: 'bar';
+
+    @include mediaquerie(tablet) {
+      grid-area: bar;
+      justify-content: flex-start;
+      padding: 0px;
+      margin: 0px;
+      background: linear-gradient(
+        to bottom,
+        $aquaPrimaryLight 0%,
+        $aquaPrimaryLight 5%,
+        $whitePure 100%
+      );
+    }
   }
 
   &title {
     padding-bottom: 30px;
+
+    @include mediaquerie(tablet) {
+      padding: 15px 20px 30px 20px;
+    }
   }
 }
 
 #bar {
   width: 290px !important;
   height: 160px !important;
+
+  @include mediaquerie(tablet) {
+    width: 330px !important;
+    height: 190px !important;
+  }
 }

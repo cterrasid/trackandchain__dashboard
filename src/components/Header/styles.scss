@@ -9,6 +9,10 @@
     padding: 10px;
     position: fixed;
     z-index: 3;
+
+    @include mediaquerie(tablet){
+      position: static;
+    }
   }
 
   &logo {
@@ -27,6 +31,10 @@ svg#bigTriangleColor {
   position: fixed;
   top: 70px;
   z-index: 3;
+
+  @include mediaquerie(tablet){
+    position: static;
+  }
 }
 
 #bigTriangleColor path {

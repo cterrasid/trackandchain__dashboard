@@ -9,11 +9,27 @@
     padding: 30px;
     margin-top: -3px;
     text-align: center;
-    grid-area: 'doughnut';
+
+    @include mediaquerie(tablet) {
+      grid-area: doughnut;
+      padding: 0;
+      margin: 0;
+      height: 300px;
+      background: linear-gradient(
+        to bottom,
+        $whitePure 0%,
+        $whitePure 5%,
+        $aquaPrimaryLight 100%
+      );
+    }
   }
 
   &title {
     padding-bottom: 30px;
+
+    @include mediaquerie(tablet) {
+      padding: 15px 20px 30px 20px;
+    }
   }
 }
 
@@ -21,6 +37,10 @@ svg#curveUpColor {
   @include boxSize(90px, 100%);
   margin-top: -75px;
   z-index: 1;
+
+  @include mediaquerie(tablet) {
+    display: none;
+  }
 }
 
 #curveUpColor path {
@@ -30,6 +50,10 @@ svg#curveUpColor {
 
 svg#curveDownColor {
   @include boxSize(80px, 100%);
+
+  @include mediaquerie(tablet) {
+    display: none;
+  }
 }
 
 #curveDownColor path {
@@ -41,4 +65,9 @@ svg#curveDownColor {
   margin: 0 auto;
   width: 290px !important;
   height: 145px !important;
+
+  @include mediaquerie(tablet) {
+    width: 340px !important;
+    height: 170px !important;
+  }
 }

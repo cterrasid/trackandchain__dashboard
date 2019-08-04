@@ -1,4 +1,4 @@
-import React, { Fragment } from 'react';
+import React from 'react';
 import { Line } from 'react-chartjs-2';
 import './styles.scss';
 
@@ -6,7 +6,7 @@ const LineGraph = props => {
   const { title, places, getRandomArray } = props;
 
   return (
-    <Fragment>
+    <article className="places__container">
       <svg
         id="curveDownWhite"
         xmlns="http://www.w3.org/2000/svg"
@@ -16,26 +16,24 @@ const LineGraph = props => {
       >
         <path d="M0 0 C 50 100 80 100 100 0 Z" />
       </svg>
-      <article className="places__container">
-        <h3 className="places__title">{title}</h3>
-        <Line
-          id="line"
-          data={{
-            labels: places,
-            datasets: [
-              {
-                label: 'Afluencia',
-                borderColor: '#059e88',
-                hoverBorderColor: '#02938c',
-                data: getRandomArray(100),
-                responsive: true,
-                maintainAspectRatio: false,
-              },
-            ],
-          }}
-        />
-      </article>
-    </Fragment>
+      <h3 className="places__title">{title}</h3>
+      <Line
+        id="line"
+        data={{
+          labels: places,
+          datasets: [
+            {
+              label: 'Afluencia',
+              borderColor: '#059e88',
+              hoverBorderColor: '#02938c',
+              data: getRandomArray(100),
+              responsive: true,
+              maintainAspectRatio: false,
+            },
+          ],
+        }}
+      />
+    </article>
   );
 };
 

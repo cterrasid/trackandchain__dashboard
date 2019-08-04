@@ -7,17 +7,25 @@
     @include flexContainer(flex, center, center, column);
     padding-top: 90px;
     background-color: $whitePure;
+
+    @include mediaquerie(tablet) {
+      padding-top: 0px;
+    }
   }
 }
 
 .description__ {
   &container {
-    @include boxSize(unset, 100%);
     @include flexContainer(flex, flex-start, flex-start, column);
+    width: 100%;
     line-height: 2;
     padding: 30px;
     margin-bottom: -100px;
-    grid-area: 'desc';
+
+    @include mediaquerie(tablet) {
+      height: 300px;
+      margin-bottom: 0px;
+    }
   }
 
   &title {
@@ -34,25 +42,9 @@
       @include gridContainer(
         grid,
         1fr 1fr,
-        1fr 1fr 1fr 1fr 1fr,
-        'desc desc'
-        'line doughnut'
-        'bar pie'
-        'map map'
-        'footer footer'
+        300px 300px 300px,
+        'line doughnut' 'pie bar' 'map map'
       );
     }
   }
-}
-
-svg#curveDownWhite {
-  @include boxSize(80px, 100%);
-  z-index: 1;
-  position: relative;
-  top: 80px;
-}
-
-#curveDownWhite path {
-  fill: $whitePure;
-  stroke: $whitePure;
 }

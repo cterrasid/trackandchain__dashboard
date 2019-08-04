@@ -9,11 +9,26 @@
     padding: 30px;
     margin-top: -3px;
     text-align: center;
-    grid-area: 'pie';
+
+    @include mediaquerie(tablet) {
+      grid-area: pie;
+      padding: 0px;
+      margin: 0px;
+      background: linear-gradient(
+        to bottom,
+        $aquaPrimaryLight 0%,
+        $aquaPrimaryLight 5%,
+        $whitePure 100%
+      );
+    }
   }
 
   &title {
     padding-bottom: 30px;
+
+    @include mediaquerie(tablet) {
+      padding: 15px 20px 30px 20px;
+    }
   }
 }
 
@@ -21,6 +36,10 @@ svg#curveUpPie {
   @include boxSize(90px, 100%);
   margin-top: -80px;
   z-index: 1;
+
+  @include mediaquerie(tablet) {
+    display: none;
+  }
 }
 
 #curveUpPie path {
@@ -30,6 +49,10 @@ svg#curveUpPie {
 
 svg#curveDownPie {
   @include boxSize(80px, 100%);
+
+  @include mediaquerie(tablet) {
+    display: none;
+  }
 }
 
 #curveDownPie path {
@@ -41,4 +64,9 @@ svg#curveDownPie {
   margin: 0 auto;
   width: 260px !important;
   height: 130px !important;
+
+  @include mediaquerie(tablet) {
+    width: 320px !important;
+    height: 160px !important;
+  }
 }
