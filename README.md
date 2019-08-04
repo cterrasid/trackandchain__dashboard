@@ -2,7 +2,7 @@
 
 # Dashboard 
 
-_Single Page Application created with React. The app, is a simple dashboard without functionality, created as a challenge to Track and Chain_
+_Single Page Application created with React. The app, is a simple dashboard without functionality, created as a challenge for Track and Chain_
 
 ## Project Structure 📄
 
