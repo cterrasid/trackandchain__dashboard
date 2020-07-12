@@ -38,25 +38,8 @@ _These instructions will allow you to obtain a copy of the project on your local
 
 ## Built with 🛠️
 
-### Dependencies
-
-- [node-sass 4.12.0](https://www.npmjs.com/package/node-sass)
-- [prop-types 15.7.2](https://www.npmjs.com/package/prop-types)
-- [react 16.8.6](https://www.npmjs.com/package/react)
-- [react-dom 16.8.6](https://www.npmjs.com/package/react-dom)
-- [react-scripts 3.0.1](https://www.npmjs.com/package/react-scripts)
+- [create-react-app](https://create-react-app.dev/docs/getting-started/)
 - [react-chartjs-2 2.7.6](https://www.npmjs.com/package/react-chartjs-2)
-
-### Development dependencies
-
-- [eslint-config-airbnb 17.1.0](https://www.npmjs.com/package/eslint-config-airbnb)
-- [eslint-config-prettier 4.1.0](https://www.npmjs.com/package/eslint-config-prettier)
-- [eslint-plugin-import 2.16.0](https://www.npmjs.com/package/eslint-plugin-import)
-- [eslint-plugin-jsx-a11y 6.2.1](https://www.npmjs.com/package/eslint-plugin-jsx-a11y)
-- [eslint-plugin-prettier 3.1.0](https://www.npmjs.com/package/eslint-plugin-prettier)
-- [eslint-plugin-react 7.12.4](https://www.npmjs.com/package/eslint-plugin-react)
-- [pre-commit 1.2.2](https://www.npmjs.com/package/pre-commit)
-- [prettier 1.16.4](https://www.npmjs.com/package/prettier)
 
 ## Author ✒️
 
